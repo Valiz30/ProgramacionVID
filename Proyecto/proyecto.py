@@ -208,6 +208,9 @@ colision = False
 cont = 0
 puntaje = 0
 bandera = 0
+sounds = []
+sounds.append(pygame.mixer.Sound('song.mp3'))
+sounds[0].play()
 while not salir:
 
     # Timer que controla el frame rate.
