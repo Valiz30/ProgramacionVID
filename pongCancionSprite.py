@@ -145,14 +145,14 @@ while not salir:
     if(pelota.rect.y >= altoPantalla - 100):
         direccionPelotaVertical = 1  
     #Si la pelota pasa el limite de la barra izquierda
-    distancia = pelota.rect.x - 30
+    distancia = pelota.rect.x - 10
     if(distancia <= 10):
         inicial = True
         cont2 = cont2 + 1
         sounds[1].play()
         print("Jugador 2:",cont2)
     #Si la pelota pasa el limite de la barra derecha
-    distancia = (anchoPantalla - 130) - pelota.rect.x
+    distancia = (anchoPantalla - 30) - pelota.rect.x
     if(distancia <= 10):
         inicial = True
         cont1 = cont1 + 1
